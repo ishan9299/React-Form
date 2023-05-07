@@ -1,0 +1,51 @@
+:root {
+  --field-bg-color: #ffffff;
+  --field-inactive-color: grey;
+  --field-active-color: #000000;
+  --field-input-border: 1px solid #000;
+}
+
+.field-error {
+  color: red;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h5 {
+  text-decoration: underline;
+}
+
+label {
+  padding: 5px;
+}
+
+input {
+  border: var(--field-input-border);
+  margin: 5px;
+}
+
+select {
+  border: var(--field-input-border);
+  margin: 5px;
+}
+
+select:invalid {
+  color: var(--field-inactive-color);
+}
+
+option {
+  background-color: var(--field-bg-color);
+  color: var(--field-active-color);
+}
+
+.details-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.govId-details {
+  grid-column: span 2;
+}
